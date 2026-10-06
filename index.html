@@ -156,32 +156,17 @@ footer .credit a{color:var(--lime)}
 .loyal div{min-width:0}
 .loyal h3{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:26px;font-weight:800;text-transform:uppercase;line-height:1.05;margin-bottom:6px;text-wrap:balance}
 .loyal p{font-size:16px;max-width:60ch}
-.support{background:#eef3e6}
-.support .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;border-radius:999px;padding:4px 10px;background:#f4e7b8;color:#6b5000}
-.support .tag-blue{background:#dbe8fb;color:#1d4c8f}
-.vet{background:var(--paper);border:2px solid #d9b310;border-radius:var(--radius);padding:22px;display:grid;gap:12px;margin-bottom:34px}
-.vet h3,.ndis-head h3,.ndss h3{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:30px;font-weight:800;color:var(--green-800);text-transform:uppercase;line-height:1.05;margin-top:8px}
-.vet-sub{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:24px;font-weight:700;color:#8a6a00}
-.vet ul,.nd ul{list-style:none;display:grid;gap:6px}
-.vet li,.nd li{padding-left:20px;position:relative}
-.vet li::before,.nd li::before{content:"+";position:absolute;left:2px;color:var(--green-500);font-weight:700}
-.vet .btn{justify-self:start}
-.ndis-head{margin-bottom:16px}
-.ndis-head p{color:var(--muted);margin-top:6px;max-width:62ch}
-.ndis-grid{display:grid;gap:14px}
-.nd{background:var(--paper);border:1px solid #c9d8ef;border-top:4px solid #3b6fb6;border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:4px;min-width:0}
-.nd .tier{display:inline-flex;align-items:center;gap:8px;font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-weight:800;font-size:18px;text-transform:uppercase;color:var(--muted)}
-.nd .dot{width:12px;height:12px;border-radius:50%}
-.nd h4{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:24px;font-weight:700;color:var(--green-800);line-height:1.1}
-.nd .price{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:36px;font-weight:800;color:var(--green-800);margin-top:4px}
-.nd .per{font-size:14px;color:var(--muted);margin-bottom:10px;font-variant-numeric:tabular-nums}
-.nd ul{font-size:15px;flex:1;align-content:start}
-.nd .best{margin-top:12px;font-size:14px;font-style:italic;color:var(--muted)}
-.nd-note{margin-top:16px;background:#fff7dc;border:1px solid #ecd889;border-radius:10px;padding:12px 14px;font-size:15px}
-.ndss{margin-top:34px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}
-.ndss>div{flex:1 1 260px;min-width:0}
-.ndss h3{margin-top:0}
-.ndss p{color:var(--muted);margin-top:6px;max-width:62ch}
+.special-grid{display:grid;gap:26px;margin-top:34px}
+.sp{position:relative;background:var(--paper);border:2px solid var(--c);border-radius:var(--radius);padding:30px 22px 22px;display:flex;flex-direction:column;gap:6px}
+.sp-vet{--c:#c9a227;--sub:#8a6a00;--tagbg:#f4e2a1}
+.sp-ndis{--c:#3b6fb6;--sub:#1d4c8f;--tagbg:#dbe8fb}
+.sp-ndss{--c:#2f8a7a;--sub:#1d6b5e;--tagbg:#d4efe9}
+.sp-tag{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--tagbg);color:var(--green-900);font-weight:700;font-size:14px;border-radius:999px;padding:5px 16px;white-space:nowrap}
+.sp h3{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:30px;font-weight:800;color:var(--green-800);line-height:1.05}
+.sp-sub{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:28px;font-weight:800;color:var(--sub);line-height:1.05;margin-bottom:8px}
+.sp ul{list-style:none;display:grid;gap:8px;margin-bottom:18px;flex:1;align-content:start}
+.sp li{padding-left:24px;position:relative}
+.sp li::before{content:"";position:absolute;left:3px;top:8px;width:11px;height:6px;border-left:2.5px solid var(--green-500);border-bottom:2.5px solid var(--green-500);transform:rotate(-45deg)}
 /* sticky mobile bar */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1.3fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);backdrop-filter:blur(6px)}
 .sticky .btn{padding:14px 10px;font-size:17px}
@@ -200,8 +185,7 @@ footer .credit a{color:var(--lime)}
   .gal{grid-template-columns:repeat(4,1fr)}
   .pk-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
   .rules{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .ndis-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
-  .vet{grid-template-columns:1fr 1.2fr auto;align-items:center;gap:24px}
+  .special-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
   .about-grid{grid-template-columns:1fr 1.1fr;gap:48px}
   .q-grid{grid-template-columns:1fr 1.2fr;gap:40px;align-items:start}
 }
@@ -217,7 +201,7 @@ footer .credit a{color:var(--lime)}
       <span>BPMH.mowing<small>NORTHERN ADELAIDE, SA</small></span>
     </a>
     <nav aria-label="Main">
-      <a href="#services">Services</a><a href="#work">Our work</a><a href="#packages">Packages</a><a href="#support">Veterans &amp; NDIS</a><a href="#area">Area</a><a href="#about">About</a>
+      <a href="#services">Services</a><a href="#work">Our work</a><a href="#packages">Packages</a><a href="#special">Veterans &amp; NDIS</a><a href="#area">Area</a><a href="#about">About</a>
     </nav>
     <a class="btn btn-call hdr-call" href="tel:+61416163208" aria-label="Call BPMH.mowing on 0416 163 208">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
@@ -336,71 +320,30 @@ footer .credit a{color:var(--lime)}
         <a class="btn btn-dark" href="#quote">Ask about Premium</a>
       </article>
     </div>
-    <p class="pk-note">Bigger or one-off job? Custom quotes from $120–$140 · Large properties (5,000 m²+) from $150 per visit.</p>
-  </div>
-</section>
-
-<section id="support" class="support">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="kicker">Veterans · NDIS · NDSS</div>
-      <h2>Packages for people who need a hand</h2>
-      <p>Older residents, veterans, people with disability and NDIS participants are at the heart of what we do.</p>
-    </div>
-
-    <article class="vet">
-      <div class="vet-head">
-        <span class="tag">For our veterans</span>
+    <div class="special-grid" id="special">
+      <article class="sp sp-vet">
+        <span class="sp-tag">For our veterans</span>
         <h3>Veteran Package</h3>
-        <p class="vet-sub">Special deal</p>
-      </div>
-      <ul><li>Our thanks for your service</li><li>Special discounted veteran pricing</li><li>Tailored to suit your yard</li></ul>
-      <a class="btn btn-dark" href="tel:+61416163208">Ask about it: 0416 163 208</a>
-    </article>
-
-    <div class="ndis-head">
-      <span class="tag tag-blue">NDIS</span>
-      <h3>NDIS gardening &amp; property maintenance</h3>
-      <p>For eligible NDIS participants across Adelaide's northern suburbs. All rates sit well under NDIS caps, and gardening and yard care is GST-free.</p>
-    </div>
-    <div class="ndis-grid">
-      <article class="nd">
-        <span class="tier"><span class="dot" style="background:#b07a46"></span>Bronze</span>
-        <h4>Basic Safety Maintenance</h4>
-        <div class="price">$94</div><div class="per">2 hrs · $47.00/hr</div>
-        <ul><li>Lawn mowing + edging</li><li>Whip snipping &amp; light hedging</li><li>Light pruning &amp; trimming</li><li>Gutter cleaning &amp; clearing</li><li>Ground-floor window cleaning</li><li>Path clearing for safe access</li><li>Green waste included</li></ul>
-        <p class="best">Best for fortnightly regular upkeep</p>
+        <p class="sp-sub">Special deal</p>
+        <ul><li>Our thanks for your service</li><li>Special discounted veteran pricing</li><li>Tailored to suit your yard</li></ul>
+        <a class="btn btn-dark" href="tel:+61416163208">Ask about it</a>
       </article>
-      <article class="nd">
-        <span class="tier"><span class="dot" style="background:#a8b0b5"></span>Silver</span>
-        <h4>Full Yard Care</h4>
-        <div class="price">$142</div><div class="per">3 hrs · $47.33/hr</div>
-        <ul><li>Everything in Bronze</li><li>General hedging &amp; shrub pruning</li><li>Light lopping &amp; sawing</li><li>Full debris removal</li><li>All waste disposal included</li></ul>
-        <p class="best">Best for monthly or seasonal care</p>
+      <article class="sp sp-ndis">
+        <span class="sp-tag">NDIS</span>
+        <h3>NDIS Packages</h3>
+        <p class="sp-sub">Under NDIS caps</p>
+        <ul><li>For eligible NDIS participants</li><li>Gold, Silver, Bronze &amp; Premium tiers</li><li>100% GST-free gardening &amp; yard care</li></ul>
+        <a class="btn btn-dark" href="tel:+61416163208">Ask about it</a>
       </article>
-      <article class="nd">
-        <span class="tier"><span class="dot" style="background:#d9b310"></span>Gold</span>
-        <h4>Complete Property Service</h4>
-        <div class="price">$190</div><div class="per">4 hrs · $47.50/hr</div>
-        <ul><li>Everything in Silver</li><li>Lopping, sawing &amp; trimming (up to 3 m)</li><li>Hard surface cleaning</li><li>Trip &amp; fall hazard removal</li><li>All waste disposal included</li></ul>
-      </article>
-      <article class="nd">
-        <span class="tier"><span class="dot" style="background:var(--green-700)"></span>Premium</span>
-        <h4>Custom Access &amp; Safety</h4>
-        <div class="price">From $49</div><div class="per">per hour · tailored quote</div>
-        <ul><li>All services above included</li><li>Built to match your NDIS plan goals</li><li>Complex hedging &amp; heavy clearing</li><li>Larger lopping, sawing &amp; hazard reduction</li><li>Extra tasks added as required</li><li>Full documentation for plan managers</li></ul>
-        <p class="best">Best for plan-managed and complex jobs</p>
+      <article class="sp sp-ndss">
+        <span class="sp-tag">NDSS</span>
+        <h3>NDSS Package</h3>
+        <p class="sp-sub">Diabetes Scheme welcome</p>
+        <ul><li>For NDSS members living with diabetes</li><li>Care that works around your needs</li><li>Tailored to suit your yard</li></ul>
+        <a class="btn btn-dark" href="tel:+61416163208">Ask about it</a>
       </article>
     </div>
-    <p class="nd-note"><strong>Please note:</strong> a responsible person (the participant, a carer or the plan manager) must be on site at every visit to show our team exactly what work needs doing.</p>
-
-    <article class="ndss">
-      <span class="tag tag-blue">NDSS</span>
-      <div>
-        <h3>NDSS members welcome</h3>
-        <p>Living with diabetes? Members of the National Diabetes Services Scheme (NDSS) are welcome. Let us know what you need and we'll work around it.</p>
-      </div>
-    </article>
+    <p class="pk-note">Bigger or one-off job? Custom quotes from $120–$140 · Large properties (5,000 m²+) from $150 per visit.</p>
   </div>
 </section>
 
