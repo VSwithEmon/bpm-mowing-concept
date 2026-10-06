@@ -151,6 +151,11 @@ footer .credit a{color:var(--lime)}
 .rule{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:grid;gap:4px}
 .rule strong{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:22px;text-transform:uppercase;color:var(--green-800)}
 .rule span{color:var(--muted)}
+.loyal{display:flex;gap:16px;align-items:flex-start;background:linear-gradient(135deg,#a6dc3c,#7fd65a);color:var(--green-900);border:2px solid var(--green-500);border-radius:var(--radius);padding:20px;margin-bottom:18px;box-shadow:0 10px 24px -16px rgba(22,58,32,.6)}
+.loyal svg{flex:none;width:40px;height:40px;fill:none;stroke:var(--green-900);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;background:rgba(255,255,255,.45);border-radius:12px;padding:7px}
+.loyal div{min-width:0}
+.loyal h3{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:26px;font-weight:800;text-transform:uppercase;line-height:1.05;margin-bottom:6px;text-wrap:balance}
+.loyal p{font-size:16px;max-width:60ch}
 /* sticky mobile bar */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1.3fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);backdrop-filter:blur(6px)}
 .sticky .btn{padding:14px 10px;font-size:17px}
@@ -265,6 +270,13 @@ footer .credit a{color:var(--lime)}
       <h2>Pick a package</h2>
       <p>Straightforward pricing to keep your place looking sharp. Every yard is different, so call for a free quote.</p>
     </div>
+    <div class="loyal">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z"/></svg>
+      <div>
+        <h3>Loyalty reward: 10 receipts = 1 free mow</h3>
+        <p>Keep your receipts from any package: Bronze, Silver, Gold or Premium. Collect 10 and your next lawn mow is free. Our way of saying thanks for coming back.</p>
+      </div>
+    </div>
     <div class="pk-grid">
       <article class="pk">
         <span class="tier"><span class="dot" style="background:#b07a46"></span>Bronze</span>
@@ -307,7 +319,6 @@ footer .credit a{color:var(--lime)}
       <h2>How we work</h2>
     </div>
     <div class="rules">
-      <div class="rule"><strong>Collect 10, get 1 free</strong><span>Keep your receipts from any package. After 10 paid visits, your 11th mow is free. Our way of saying thanks for coming back.</span></div>
       <div class="rule"><strong>Veterans discount</strong><span>Served? Ask us about the veterans discount when you call.</span></div>
       <div class="rule"><strong>Call or text first</strong><span>We ask first, then we mow. Please don't knock outside our hours.</span></div>
       <div class="rule"><strong>Clear the yard</strong><span>Please pick up dog poo and toys before we arrive, or a $20–$25 hazard fee applies.</span></div>
