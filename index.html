@@ -167,6 +167,20 @@ footer .credit a{color:var(--lime)}
 .sp ul{list-style:none;display:grid;gap:8px;margin-bottom:18px;flex:1;align-content:start}
 .sp li{padding-left:24px;position:relative}
 .sp li::before{content:"";position:absolute;left:3px;top:8px;width:11px;height:6px;border-left:2.5px solid var(--green-500);border-bottom:2.5px solid var(--green-500);transform:rotate(-45deg)}
+.seasonal{margin-top:34px;background:var(--green-800);color:#fff;border-radius:var(--radius);padding:24px 20px}
+.seasonal-head h3{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:32px;font-weight:800;text-transform:uppercase;line-height:1.05}
+.seasonal-head p{color:#cfdccb;margin-top:4px}
+.season-grid{display:grid;gap:14px;margin-top:18px}
+.season{background:var(--paper);color:var(--ink);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:4px;border-top:5px solid var(--c)}
+.season-spring{--c:#8fd14f}
+.season-winter{--c:#7fb3e0}
+.season-name{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:26px;font-weight:800;text-transform:uppercase;color:var(--green-800)}
+.season .price{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:40px;font-weight:800;color:var(--green-800)}
+.season ul{list-style:none;display:grid;gap:6px;margin:6px 0 16px;flex:1;align-content:start}
+.season li{padding-left:22px;position:relative}
+.season li::before{content:"";position:absolute;left:3px;top:8px;width:11px;height:6px;border-left:2.5px solid var(--green-500);border-bottom:2.5px solid var(--green-500);transform:rotate(-45deg)}
+.season .btn{align-self:flex-start}
+.seasonal-foot{margin-top:16px;font-weight:700;color:var(--lime);letter-spacing:.5px;text-align:center}
 /* sticky mobile bar */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1.3fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);backdrop-filter:blur(6px)}
 .sticky .btn{padding:14px 10px;font-size:17px}
@@ -186,6 +200,8 @@ footer .credit a{color:var(--lime)}
   .pk-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
   .rules{grid-template-columns:repeat(2,minmax(0,1fr))}
   .special-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .season-grid{grid-template-columns:1fr 1fr}
+  .seasonal{padding:32px}
   .about-grid{grid-template-columns:1fr 1.1fr;gap:48px}
   .q-grid{grid-template-columns:1fr 1.2fr;gap:40px;align-items:start}
 }
@@ -319,6 +335,27 @@ footer .credit a{color:var(--lime)}
         <ul><li>Everything in Gold</li><li>Gutter cleaning</li><li>Window cleaning</li><li>Priority booking</li></ul>
         <a class="btn btn-dark" href="#quote">Ask about Premium</a>
       </article>
+    </div>
+    <div class="seasonal" id="seasonal">
+      <div class="seasonal-head">
+        <h3>Seasonal packages</h3>
+        <p>Affordable once-a-season tidy-ups for your home.</p>
+      </div>
+      <div class="season-grid">
+        <article class="season season-spring">
+          <span class="season-name">Spring cleanup</span>
+          <div class="price">$20</div>
+          <ul><li>Clear leaves &amp; debris</li><li>Light tidy-up</li><li>Fresh start for your garden</li></ul>
+          <a class="btn btn-dark" href="tel:+61416163208">Book spring cleanup</a>
+        </article>
+        <article class="season season-winter">
+          <span class="season-name">Winter cleanup</span>
+          <div class="price">$20</div>
+          <ul><li>Tidy up before the cold</li><li>Remove branches &amp; leaves</li><li>Quick, neat, done right</li></ul>
+          <a class="btn btn-dark" href="tel:+61416163208">Book winter cleanup</a>
+        </article>
+      </div>
+      <p class="seasonal-foot">Simple · Fair · Friendly</p>
     </div>
     <div class="special-grid" id="special">
       <article class="sp sp-vet">
