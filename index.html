@@ -184,6 +184,16 @@ footer .credit a{color:var(--lime)}
 .season li::before{content:"";position:absolute;left:3px;top:8px;width:11px;height:6px;border-left:2.5px solid var(--green-500);border-bottom:2.5px solid var(--green-500);transform:rotate(-45deg)}
 .season .btn{align-self:flex-start}
 .seasonal-foot{margin-top:16px;font-weight:700;color:var(--lime);letter-spacing:.5px;text-align:center}
+.zt{margin-top:18px;display:flex;gap:16px;align-items:flex-start;background:var(--green-900);color:#fff;border-radius:var(--radius);padding:22px;border-left:6px solid var(--lime)}
+.zt-badge{flex:none;width:46px;height:46px;border-radius:50%;background:#c8372b;display:grid;place-items:center}
+.zt-badge svg{width:28px;height:28px;fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round}
+.zt-body{min-width:0}
+.zt h3{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:28px;font-weight:800;text-transform:uppercase;line-height:1.05;color:var(--lime)}
+.zt p{margin-top:6px;color:#e3ece0;max-width:62ch}
+.zt ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.zt li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:5px 12px;font-weight:600;font-size:15px}
+.zt li::before{content:"✕ ";color:#ff8a7e;font-weight:800}
+.zt .zt-motto{margin-top:14px;font-weight:700;color:var(--lime)}
 /* sticky mobile bar */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1.3fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);backdrop-filter:blur(6px)}
 .sticky .btn{padding:14px 10px;font-size:17px}
@@ -398,6 +408,15 @@ footer .credit a{color:var(--lime)}
       <div class="rule"><strong>Clear the yard</strong><span>Please pick up dog poo and toys before we arrive, or a $20–$25 hazard fee applies.</span></div>
       <div class="rule"><strong>Free travel within 20 km</strong><span>Beyond that it's $0.99 per km.</span></div>
       <div class="rule"><strong>Overtime: $45.00/hr</strong><span>Extra hours beyond your booked time, or work before 9am or after 3pm, are charged at $45.00 per hour.</span></div>
+    </div>
+    <div class="zt" role="note" aria-label="Zero tolerance for racism">
+      <div class="zt-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></div>
+      <div class="zt-body">
+        <h3>Zero tolerance for racism</h3>
+        <p>We do not allow racism of any kind, toward anyone, no matter their skin colour, background or where they come from.</p>
+        <ul><li>Not to customers</li><li>Not to workers</li><li>Not from anyone, ever</li></ul>
+        <p class="zt-motto">Love · Care · Honour, for everyone, always.</p>
+      </div>
     </div>
   </div>
 </section>
