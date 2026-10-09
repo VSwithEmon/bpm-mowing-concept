@@ -205,6 +205,12 @@ footer .credit a{color:var(--lime)}
 .mark strong{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif;font-size:20px;text-transform:uppercase;white-space:nowrap}
 .mark-black{background:#1c1f1d;color:#fff}
 .mark-red{background:#c8372b;color:#fff}
+.zt-dis{background:#173a5c;border-left-color:#8cc4ff}
+.zt h3{overflow-wrap:break-word;hyphens:auto}
+@media (max-width:400px){.zt{flex-direction:column;gap:12px}.zt h3{font-size:24px}}
+.zt-dis .zt-badge{background:#2f7ad1}
+.zt-dis h3{color:#bfe0ff}
+.zt-dis li::before{content:"✓ ";color:#9fe08a}
 /* sticky mobile bar */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1.3fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);backdrop-filter:blur(6px)}
 .sticky .btn{padding:14px 10px;font-size:17px}
@@ -429,6 +435,15 @@ footer .credit a{color:var(--lime)}
         <p>We do not allow racism of any kind, toward anyone, no matter their skin colour, background or where they come from.</p>
         <ul><li>Not to customers</li><li>Not to workers</li><li>Not from anyone, ever</li></ul>
         <p class="zt-motto">Love · Care · Honour, for everyone, always.</p>
+      </div>
+    </div>
+    <div class="zt zt-dis" role="note" aria-label="No discrimination against people with disability">
+      <div class="zt-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg></div>
+      <div class="zt-body">
+        <h3>No discrimination against people with disability</h3>
+        <p>BPMH.mowing accepts, understands and welcomes people with disability, as customers and as part of our crew.</p>
+        <p>Our boss and CEO, Brodie, lives with disability himself. We know first-hand what it takes, so everyone gets patience, respect and a fair go.</p>
+        <ul><li>Customers with disability</li><li>Workers with disability</li><li>NDIS &amp; NDSS welcome</li></ul>
       </div>
     </div>
     <div class="coc" role="note" aria-label="Crew code of conduct">
