@@ -212,8 +212,19 @@ footer .credit a{color:var(--lime)}
 .zt-dis h3{color:#bfe0ff}
 .zt-dis li::before{content:"✓ ";color:#9fe08a}
 .pk-zero{font-size:13px;line-height:1.4;color:var(--green-800);background:var(--lime-soft);border-radius:8px;padding:8px 10px;margin:-4px 0 12px}
-.rule-wide{grid-column:1/-1;border-left:5px solid var(--green-500)}
-.rule-sub{font-style:normal;font-weight:700;color:var(--green-500);font-size:15px}
+.council{padding-top:0}
+.council-card{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--green-500);border-radius:var(--radius);padding:24px;display:grid;gap:22px}
+.council-text{min-width:0}
+.council h2{font-size:34px;font-weight:800;color:var(--green-800);text-transform:uppercase;margin-top:4px;text-wrap:balance}
+.council .kicker{color:var(--green-500);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.council-sub{font-weight:700;color:var(--green-500);margin:6px 0 10px}
+.council-text p:not(.council-sub){color:var(--muted);max-width:62ch}
+.council-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.council .btn-ghost{color:var(--green-800);border-color:var(--green-800)}
+.council-list{list-style:none;display:grid;gap:8px;align-content:start;background:var(--lime-soft);border-radius:12px;padding:16px 18px}
+.council-list li{padding-left:24px;position:relative;font-weight:600;color:var(--green-800)}
+.council-list li::before{content:"";position:absolute;left:3px;top:8px;width:11px;height:6px;border-left:2.5px solid var(--green-500);border-bottom:2.5px solid var(--green-500);transform:rotate(-45deg)}
+@media (min-width:760px) and (max-width:1023px){nav{gap:14px;font-size:14px}.hdr-call .label{display:none}.brand small{display:none}}
 /* sticky mobile bar */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1.3fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);backdrop-filter:blur(6px)}
 .sticky .btn{padding:14px 10px;font-size:17px}
@@ -233,6 +244,8 @@ footer .credit a{color:var(--lime)}
   .pk-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
   .rules{grid-template-columns:repeat(2,minmax(0,1fr))}
   .special-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .council-card{grid-template-columns:1.6fr 1fr;padding:32px;align-items:start}
+  .council h2{font-size:44px}
   .coc-list{grid-template-columns:1fr 1fr;column-gap:28px}
   .coc-marks{grid-template-columns:1fr 1fr}
   .season-grid{grid-template-columns:1fr 1fr}
@@ -252,7 +265,7 @@ footer .credit a{color:var(--lime)}
       <span>BPMH.mowing<small>NORTHERN ADELAIDE, SA</small></span>
     </a>
     <nav aria-label="Main">
-      <a href="#services">Services</a><a href="#work">Our work</a><a href="#packages">Packages</a><a href="#special">Veterans &amp; NDIS</a><a href="#area">Area</a><a href="#about">About</a>
+      <a href="#services">Services</a><a href="#work">Our work</a><a href="#packages">Packages</a><a href="#council">Council</a><a href="#special">Veterans &amp; NDIS</a><a href="#area">Area</a><a href="#about">About</a>
     </nav>
     <a class="btn btn-call hdr-call" href="tel:+61416163208" aria-label="Call BPMH.mowing on 0416 163 208">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
@@ -306,6 +319,28 @@ footer .credit a{color:var(--lime)}
         <ul><li>Gutter cleaning</li><li>Ground-floor window cleaning</li><li>Path &amp; driveway clearing</li></ul>
         <p class="soon">…and a whole range of other jobs. Ask us.</p>
       </article>
+    </div>
+  </div>
+</section>
+
+<section id="council" class="council">
+  <div class="wrap">
+    <div class="council-card">
+      <div class="council-text">
+        <div class="kicker">Council &amp; commercial</div>
+        <h2>Debris &amp; council site clearance</h2>
+        <p class="council-sub">Public parks, verges &amp; council grounds maintenance</p>
+        <p>Designed for local council properties, roadside verges, public reserves and commercial sites. Standard service includes routine lawn care and edge blow-down. For heavy storm debris, fallen branches or site clearances across all council zones, work is included in your fixed site agreement or billed at our standard rate.</p>
+        <div class="council-cta"><a class="btn btn-call" href="tel:+61416163208">Call 0416 163 208</a><a class="btn btn-ghost" href="#quote">Request a site quote</a></div>
+      </div>
+      <ul class="council-list">
+        <li>Public parks &amp; reserves</li>
+        <li>Roadside verges</li>
+        <li>Council grounds</li>
+        <li>Commercial sites</li>
+        <li>Storm debris &amp; fallen branches</li>
+        <li>Full site clearances</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -430,7 +465,6 @@ footer .credit a{color:var(--lime)}
       <div class="rule"><strong>Clear the yard</strong><span>Please pick up dog poo and toys before we arrive, or a $20–$25 hazard fee applies.</span></div>
       <div class="rule"><strong>Free travel within 20 km</strong><span>Beyond that it's $0.99 per km.</span></div>
       <div class="rule"><strong>Overtime: $45.00/hr</strong><span>Extra hours beyond your booked time, or work before 9am or after 3pm, are charged at $45.00 per hour.</span></div>
-      <div class="rule rule-wide"><strong>Debris &amp; council site clearance</strong><em class="rule-sub">Public parks, verges &amp; council grounds maintenance</em><span>Designed for local council properties, roadside verges, public reserves and commercial sites. Standard service includes routine lawn care and edge blow-down. For heavy storm debris, fallen branches or site clearances across all council zones, work is included in your fixed site agreement or billed at our standard rate.</span></div>
     </div>
     <div class="zt" role="note" aria-label="Zero tolerance for racism">
       <div class="zt-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></div>
